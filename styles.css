@@ -25,18 +25,35 @@ body {
 
 /* NAV */
 
+/* === STICKY HIGH-TECH HEADER === */
 .nav {
   position: sticky;
   top: 0;
-  z-index: 20;
+  left: 0;
+  width: 100%;
+  z-index: 2000;
+
   display: flex;
-  align-items: center;
   justify-content: space-between;
+  align-items: center;
+
   padding: 14px 32px;
-  background: rgba(2, 6, 23, 0.96);
-  border-bottom: 1px solid rgba(148, 163, 255, 0.18);
-  backdrop-filter: blur(18px);
+
+  background: rgba(2, 6, 23, 0.88); /* translucent */
+  backdrop-filter: blur(14px);
+
+  border-bottom: 1px solid rgba(148, 163, 255, 0.15);
+  transition: all 0.25s ease;
 }
+
+/* small shrink effect when scrolling */
+.nav.scrolled {
+  padding: 10px 28px;
+  background: rgba(2, 6, 23, 0.78);
+  border-bottom: 1px solid rgba(148, 163, 255, 0.25);
+  box-shadow: 0 4px 14px rgba(0,0,0,0.45);
+}
+
 
 .logo {
   display: flex;
