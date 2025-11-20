@@ -1,1 +1,70 @@
-<html><body><h1>Contact Page — Updated Version Coming Soon</h1></body></html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Contact — ZineX Digital</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="styles.css" />
+  <script defer src="app.js"></script>
+</head>
+<body>
+  <header class="nav">
+    <a href="index.html" class="logo">
+      <span class="logo-main">ZineX</span><span class="logo-sub">Digital</span>
+    </a>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="pricing.html">Pricing</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a class="active" href="contact.html" class="nav-cta">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="page">
+    <section class="page-hero">
+      <h1>Let’s talk about your project</h1>
+      <p>Tell us a bit about your business and what you want to achieve. We’ll reply with ideas.</p>
+    </section>
+
+    <section class="page-section contact-grid">
+      <form class="contact-form">
+        <label>
+          Name
+          <input type="text" placeholder="Your name" required />
+        </label>
+        <label>
+          Business / Brand
+          <input type="text" placeholder="Business name" />
+        </label>
+        <label>
+          Email
+          <input type="email" placeholder="you@example.com" required />
+        </label>
+        <label>
+          What do you need?
+          <textarea rows="4" placeholder="Website, funnel, automation, ads..."></textarea>
+        </label>
+        <button type="submit" class="btn primary">Send</button>
+        <p class="form-note">For fastest reply, message us directly on WhatsApp.</p>
+      </form>
+
+      <div class="contact-side">
+        <h2>Prefer WhatsApp?</h2>
+        <p>Click the button below and send a quick voice note or text. We’ll answer as soon as possible.</p>
+        <a href="https://wa.me/0527004686" target="_blank" class="btn whatsapp-btn">Message on WhatsApp</a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 ZineX Digital. All rights reserved.</p>
+  </footer>
+
+  <a href="https://wa.me/0527004686" target="_blank" class="whatsapp-fab">
+    <span class="wa-icon">✆</span>
+  </a>
+</body>
+</html>
