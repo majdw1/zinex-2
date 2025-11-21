@@ -16,3 +16,14 @@ document.addEventListener("DOMContentLoaded", () => {
 
   animated.forEach((el) => observer.observe(el));
 });
+
+// sticky header shrink effect
+document.addEventListener("scroll", () => {
+  const nav = document.querySelector(".nav");
+  if (!nav) return;
+  if (window.scrollY > 40) {
+    nav.classList.add("scrolled");
+  } else {
+    nav.classList.remove("scrolled");
+  }
+});
