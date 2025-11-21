@@ -27,3 +27,14 @@ document.addEventListener("scroll", () => {
     nav.classList.remove("scrolled");
   }
 });
+
+// Mobile menu toggle
+const mobileBtn = document.querySelector(".mobile-menu-btn");
+const navMenu = document.querySelector("nav");
+
+if (mobileBtn){
+ mobileBtn.addEventListener("click", () => {
+   navMenu.classList.toggle("active");
+   mobileBtn.classList.toggle("open");
+ });
+}
