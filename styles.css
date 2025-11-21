@@ -1016,3 +1016,22 @@ footer {
   transform: scale(1.1);
   filter: drop-shadow(0 0 12px rgba(14,165,233,1));
 }
+
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo-icon {
+  height: 32px;
+  width: auto;
+  filter: drop-shadow(0 0 8px rgba(124,58,237,0.8));
+  transition: 0.25s ease;
+}
+
+.logo-icon:hover {
+  transform: scale(1.1);
+  filter: drop-shadow(0 0 12px rgba(14,165,233,1));
+}
